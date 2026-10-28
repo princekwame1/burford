@@ -15,7 +15,7 @@ use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
 use Tests\TestCase;
 
-class BurfordTest extends TestCase
+class MkDuaPaTest extends TestCase
 {
     use RefreshDatabase;
 
@@ -242,7 +242,7 @@ class BurfordTest extends TestCase
         $this->as('manager');
         $this->post('/sms/send', ['mode' => 'group', 'group' => 'susu_active', 'message' => 'Hello {name} from {company}'])->assertRedirect('/sms');
         $this->assertSame(6, SmsMessage::where('type', 'bulk')->count());
-        $this->assertTrue(SmsMessage::where('message', 'Hello Ama Mensah from BURFORD Collection')->exists());
+        $this->assertTrue(SmsMessage::where('message', 'Hello Ama Mensah from MK DUA PA')->exists());
 
         $this->post('/sms/send', ['mode' => 'single', 'to' => '0241112222, 0551112222', 'message' => 'Test'])->assertRedirect();
         $this->assertTrue(SmsMessage::where('to', '+233551112222')->exists());
@@ -273,7 +273,7 @@ class BurfordTest extends TestCase
     {
         $this->as('admin');
         $this->put('/settings', [
-            'company_name' => 'BURFORD Collection', 'default_interest_rate' => 4, 'loan_prefix' => 'BCL-', 'reminder_days_before' => 2,
+            'company_name' => 'MK DUA PA', 'default_interest_rate' => 4, 'loan_prefix' => 'BCL-', 'reminder_days_before' => 2,
             'texttango_base_url' => 'https://app.texttango.com/api', 'texttango_sender_id' => 'BURFORD', 'texttango_token' => '',
             'sms_enabled' => 1, 'templates' => ['collection' => 'Hi {name}'], 'toggles' => ['collection' => 1],
         ])->assertSessionHasNoErrors();

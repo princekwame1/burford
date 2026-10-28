@@ -1,6 +1,6 @@
 @props(['title' => null])
 @php
-    $company = \App\Models\Setting::get('company_name', 'BURFORD Collection');
+    $company = \App\Models\Setting::get('company_name', 'MK DUA PA');
     $user = auth()->user();
     $is = fn (...$p) => collect($p)->contains(fn ($x) => request()->routeIs($x));
     $nav = [
@@ -54,8 +54,8 @@
         <a href="{{ route('dashboard') }}" class="relative flex items-center gap-3 px-5 pb-4 pt-6">
             <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-white p-1 shadow-lg shadow-black/30"><img src="{{ asset('images/logo-mark.png') }}" alt="" class="size-full object-contain"></span>
             <span class="leading-tight">
-                <span class="block font-display text-[15px] font-extrabold tracking-wide text-white">{{ \Illuminate\Support\Str::of($company)->before(' ') }}</span>
-                <span class="block text-[11px] font-medium uppercase tracking-[0.2em] text-gold-400">{{ \Illuminate\Support\Str::of($company)->after(' ') ?: 'Finance' }}</span>
+                <span class="block font-display text-[15px] font-extrabold tracking-wide text-white">{{ $company }}</span>
+                <span class="block text-[11px] font-medium uppercase tracking-[0.2em] text-gold-400">Susu Enterprise</span>
             </span>
         </a>
         <nav class="sidebar-scroll relative flex-1 space-y-0.5 overflow-y-auto px-3 pb-6">

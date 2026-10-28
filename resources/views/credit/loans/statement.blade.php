@@ -1,4 +1,4 @@
-@php use App\Support\Money; use App\Models\Loan; $company = \App\Models\Setting::get('company_name', 'BURFORD Collection'); $period = Loan::periodLabel($loan->frequency); @endphp
+@php use App\Support\Money; use App\Models\Loan; $company = \App\Models\Setting::get('company_name', 'MK DUA PA'); $period = Loan::periodLabel($loan->frequency); @endphp
 <!DOCTYPE html>
 <html lang="en">
 <head>

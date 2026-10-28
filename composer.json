@@ -1,9 +1,9 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "mkduapa/susu-enterprise",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "MK DUA PA Susu Enterprise: susu collections, micro-credit and SMS notifications.",
+    "keywords": ["susu", "micro-credit", "laravel"],
     "license": "MIT",
     "require": {
         "php": "^8.2",

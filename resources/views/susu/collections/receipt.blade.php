@@ -1,4 +1,4 @@
-@php use App\Support\Money; $company = \App\Models\Setting::get('company_name', 'BURFORD Collection'); @endphp
+@php use App\Support\Money; $company = \App\Models\Setting::get('company_name', 'MK DUA PA'); @endphp
 <x-layouts.app title="Receipt {{ $c->receipt_no }}">
     <div class="no-print mb-6 flex items-center justify-between">
         <a href="{{ route('susu.collections.index') }}" class="inline-flex items-center gap-1.5 text-sm text-ink-500 hover:text-ink-900"><x-icon name="arrow-left" class="size-4" /> Back</a>

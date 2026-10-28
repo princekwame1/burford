@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header"><h3 class="card-title">Company</h3></div>
                 <div class="card-body grid gap-4 sm:grid-cols-2">
-                    <x-field label="Company name" name="company_name" :value="Setting::get('company_name', 'BURFORD Collection')" required />
+                    <x-field label="Company name" name="company_name" :value="Setting::get('company_name', 'MK DUA PA')" required />
                     <x-field label="Tagline" name="company_tagline" :value="Setting::get('company_tagline')" />
                     <x-field label="Phone" name="company_phone" :value="Setting::get('company_phone')" />
                     <x-field label="Address" name="company_address" :value="Setting::get('company_address')" />

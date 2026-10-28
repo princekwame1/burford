@@ -1,7 +1,7 @@
 @php
     use App\Support\Money;
     $a = $application; $b = $a->borrower;
-    $company = \App\Models\Setting::get('company_name', 'BURFORD Collection');
+    $company = \App\Models\Setting::get('company_name', 'MK DUA PA');
     $box = fn ($on) => $on ? '☑' : '☐';
     $line = fn ($v) => $v !== null && $v !== '' ? e($v) : '<span class="text-ink-300">________________</span>';
     $t = $a->approved_amount ? $a->approvedTotals() : null;

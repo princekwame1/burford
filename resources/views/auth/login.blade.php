@@ -1,4 +1,4 @@
-@php($company = \App\Models\Setting::get('company_name', 'BURFORD Collection'))
+@php($company = \App\Models\Setting::get('company_name', 'MK DUA PA'))
 <!DOCTYPE html>
 <html lang="en">
 <head>

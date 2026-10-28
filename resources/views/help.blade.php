@@ -1,6 +1,6 @@
 @php
     $u = auth()->user();
-    $company = \App\Models\Setting::get('company_name', 'BURFORD Collection');
+    $company = \App\Models\Setting::get('company_name', 'MK DUA PA');
     $susu = $u->hasRole('admin', 'manager', 'collector');
     $credit = $u->hasRole('admin', 'manager', 'loan_officer');
     $manager = $u->hasRole('admin', 'manager');

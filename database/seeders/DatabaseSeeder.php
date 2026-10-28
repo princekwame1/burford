@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         Setting::put([
-            'company_name' => 'BURFORD Collection',
+            'company_name' => 'MK DUA PA',
             'company_tagline' => 'Small credit • Big dreams • Brighter futures',
             'company_phone' => '',
             'company_address' => 'Barrier, Kasoa — Ghana',

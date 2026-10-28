@@ -35,7 +35,7 @@
         <div class="space-y-4">
             <div class="card card-body">
                 <p class="text-xs font-semibold uppercase tracking-wider text-ink-500">Preview</p>
-                <div class="mt-4 rounded-2xl rounded-tl-sm bg-brand-600 p-4 text-sm text-white shadow-sm" x-text="(text || 'Your message…').replaceAll('{name}', 'Ama').replaceAll('{company}', @js(\App\Models\Setting::get('company_name', 'BURFORD Collection')))"></div>
+                <div class="mt-4 rounded-2xl rounded-tl-sm bg-brand-600 p-4 text-sm text-white shadow-sm" x-text="(text || 'Your message…').replaceAll('{name}', 'Ama').replaceAll('{company}', @js(\App\Models\Setting::get('company_name', 'MK DUA PA')))"></div>
                 <p class="mt-3 text-xs text-ink-500" x-show="mode === 'group'">Recipients: <span class="font-semibold" x-text="groups[group]?.count ?? 0"></span></p>
             </div>
             <button class="btn btn-primary w-full py-3" data-confirm-title="Send to the whole group?" data-confirm-button="Send now"

@@ -1,4 +1,4 @@
-# BURFORD Collection
+# MK DUA PA
 
 Laravel 12 dashboard for running a microfinance business: **susu (daily savings) collections** and **micro-credit loans**, with **TextTango SMS** notifications.
 

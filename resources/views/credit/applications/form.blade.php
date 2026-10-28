@@ -104,7 +104,7 @@
                 </div>
                 <label class="flex items-start gap-3 rounded-xl border border-ink-200 bg-ink-50/60 p-4 dark:border-ink-700 dark:bg-ink-800/40">
                     <input type="checkbox" name="declaration_accepted" value="1" class="checkbox mt-0.5" @checked(old('declaration_accepted', $application->declaration_accepted))>
-                    <span class="text-sm text-ink-700 dark:text-ink-300">I declare that the information provided in this application is true and complete to the best of my knowledge. I authorise {{ \App\Models\Setting::get('company_name', 'BURFORD Collection') }} to verify the information supplied and conduct appropriate credit and identity checks for assessing this application.</span>
+                    <span class="text-sm text-ink-700 dark:text-ink-300">I declare that the information provided in this application is true and complete to the best of my knowledge. I authorise {{ \App\Models\Setting::get('company_name', 'MK DUA PA') }} to verify the information supplied and conduct appropriate credit and identity checks for assessing this application.</span>
                 </label>
                 @error('declaration_accepted')<p class="error">{{ $message }}</p>@enderror
             </div>
